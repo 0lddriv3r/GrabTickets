@@ -1,0 +1,15 @@
+{
+  "name": "GrabTickets",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "zhuojiaoshou",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://piao.damai.cn/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
