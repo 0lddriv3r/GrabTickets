@@ -1,6 +1,6 @@
-var performid = '9047306';
-var priceid = '12252483';
-var person = '1';
+var performid = '210036688';
+var priceid = '220673359';
+var person = '2';
 
 while (1) {
   var re = main();
@@ -10,7 +10,7 @@ while (1) {
     break;
   }
 
-  sleep(1000);
+  sleep(100);
 }
 
 function sleep(n) {
@@ -19,7 +19,7 @@ function sleep(n) {
 }
 
 function main() {
-  var buy = document.getElementById('btnBuyNow');
+  var buy = document.getElementById('buybtn');
   var Xuanzuo = document.getElementById('btnXuanzuo');
   if (buy !== null) {
     var Buytext = buy.innerHTML;
@@ -57,6 +57,6 @@ function grab_icket() {
 
     var str = '<div class="ct" style=""><ul class="lst"><li class="itm" style="" data-performid=' + performid + ' data-priceid=' + priceid + '><span class="txt txt-datetime ">"2018-05-02 周三 19:30"</span><span class="txt txt-price">"980"</span><span class="m-nums"><a class="btn btn-low" href="javascript:;">减</a><input class="ipt ipt-num" type="text" value=' + person + '><a class="btn btn-add" href="javascript:;">加</a></span><span class="tips tips-stock"><strong></strong></span><a class="btn btn-del" href="javascript:;"><i></i>删除</a></li></ul></div><div class="ops"><a href="javascript:;" class="u-btn u-btn-c1 u-btn-choose" id="btnXuanzuo" style="">选座购买</a><a class="u-btn u-btn-buynow" href="javascript:;" id="btnBuyNow">立即购买</a></div>';
     document.getElementById('cartList').innerHTML = str;
-    var bt = document.getElementById('btnBuyNow');
+    var bt = document.getElementById('buybtn');
     bt.click();
 }
